@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/stlye.css">
+</head>
+<body>
+    <header>
+        <div class="wrap">
+            <h1>
+                <a href="">
+                    <img src="./images/logo_m.gif" alt="" class="m">
+                    <img src="./images/logo_d.gif" alt="" class="pc">
+                </a>
+            </h1>
+            <button class="btn-open"><img src="./images/btn_menu.gif" alt=""></button>
+            <button class="my-page"><img src="./images/btn_member_m.gif" alt=""></button>
+            <nav>
+                <button class="btn-cls"><img src="./images/btn_menu_close.gif" alt=""></button>
+                <button class="btn-search"><img src="./images/btn_srh_m.gif" alt=""></button>
+                <input type="text" placeholder="검색어를 입력하세요" class="search">
+                <ul class="gnb">
+                    <li>COLLECTION</li>
+                    <li>ORIGIN</li>
+                    <li>4TEAM</li>
+                    <li>LIVE</li>
+                    <li>EVENT</li>
+                    <li>STORE</li>
+                    <li>CAMPAIGN</li>
+                    <li>POP-UP STORE</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="banner">
+        <a href="">
+            <img src="./images/sliderM1.jpg" alt="#" class="m">
+            <img src="./images/slider1.jpg" alt="#" class="pc">
+        </a>
+    </div>
+    <div class="main">
+        <div class="con">
+            <a href="">
+                <img src="./images/bn1.jpg" alt="">
+                <div class="over"><p>PARK SU JIN<br>PERPECT FIT STYLE</p></div>
+            </a>
+        </div>
+        <div class="con">
+            <a href="">
+                <img src="./images/bn2.jpg" alt="">
+                <div class="over"><p>PARK SU JIN<br>PERPECT STYLE FIT</p></div>
+            </a>
+        </div>
+        <div class="con">
+            <a href="">
+                <img src="./images/bn3.jpg" alt="">
+                <div class="over">
+                    <p>PARK SU JIN<br>PERPECT STYLE FIT</p>
+                    <img src="./images/icon_ad.png" alt="" class="ico">
+                </div>
+            </a> 
+        </div>
+        <div class="con">
+            <a href="">
+                <img src="./images/bn4.jpg" alt="">
+                <div class="over">
+                    <p>PARK SU JIN<br>PERPECT STYLE FIT</p>
+                    <img src="./images/icon_blog.png" alt="" class="ico">
+                </div>
+            </a>
+        </div>
+        <div class="con">
+            <a href="">
+                <img src="./images/bn5.jpg" alt="">
+                <div class="over">
+                    <p>PARK SU JIN<br>PERPECT STYLE FIT</p>
+                    <img src="./images/icon_facebook.png" alt="" class="ico">
+                </div>
+            </a>
+        </div>
+        <div class="con">
+            <a href="">
+                <img src="./images/bn6.jpg" alt="">
+                <div class="over">
+                    <p>PARK SU JIN<br>PERPECT STYLE FIT</p>
+                    <img src="./images/icon_instagram.png" alt="" class="ico">
+                </div>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <div class="wrap">
+            <ul class="f1">
+                <li>STORE INFO</li>
+                <li>오시는 길</li>
+                <li>RECRUIT</li>
+            </ul>
+            <ul class="f2">
+                <li>이용약관</li>
+                <li>개인정보 취급방침</li>
+                <li>CS CENTER</li>
+                <li>매장개설문의</li>
+            </ul>
+        </div>
+        <div class="ico">
+            <img src="./images/fSnsIcon1_m.gif" alt="">
+            <img src="./images/fSnsIcon2_m.gif" alt="">
+            <img src="./images/fSnsIcon3_m.gif" alt="">
+            <img src="./images/fSnsIcon4_m.gif" alt="">
+            <img src="./images/fSnsIcon5_m.gif" alt="">
+        </div>
+    </footer>
+    <script>
+        const $nav = document.querySelector("nav");
+        const $btnOpen = document.querySelector(".btn-open");
+        const $btnCls = document.querySelector(".btn-cls");
+
+        $btnOpen.addEventListener("click", () => {
+            $nav.style.left = 0;
+        });
+        $btnCls.addEventListener("click", () => {
+            $nav.style.left = "-100%"; 
+        });
+    </script>
+</body>
+</html>
